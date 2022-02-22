@@ -1,4 +1,4 @@
-import { PALETTE_ID } from "../../constants";
+import { PALETTE_ID } from "../../../constants";
 
 /**
  * Set all ped component variations at once.

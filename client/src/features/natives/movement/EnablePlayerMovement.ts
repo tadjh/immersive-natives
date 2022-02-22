@@ -1,4 +1,8 @@
-import { INPUT_MOVE_LR, INPUT_MOVE_UD, PLAYER_CONTROL } from "../../constants";
+import {
+  INPUT_MOVE_LR,
+  INPUT_MOVE_UD,
+  PLAYER_CONTROL,
+} from "../../../constants";
 
 /**
  * Enables player movement for the current frame

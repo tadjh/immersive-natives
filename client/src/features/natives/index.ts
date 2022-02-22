@@ -1,11 +1,4 @@
-export { DisablePlayerMeleeActions } from "./DisablePlayerMeleeActions";
-export { DisablePlayerDuck } from "./DisablePlayerDuck";
-export { DisablePlayerJump } from "./DisablePlayerJump";
-export { DisablePlayerSprint } from "./DisablePlayerSprint";
-export { EnablePlayerMovement } from "./EnablePlayerMovement";
-export { GetAllPedComponentVariations } from "./GetAllPedComponentVariations";
-export { GetAllPedPropIndexes } from "./GetAllPedPropIndexes";
-export { GetPedCoords } from "./GetPedCoords";
-export { RestrictPlayerMovement } from "./RestrictPlayerMovement";
-export { SetAllPedComponentVariations } from "./SetAllPedComponentVariations";
-export { SetAllPedPropIndexes } from "./SetAllPedPropIndexes";
+export * from "./appearance";
+export * from "./combat";
+export * from "./location";
+export * from "./movement";

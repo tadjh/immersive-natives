@@ -1,4 +1,4 @@
-import { INPUT_JUMP, PLAYER_CONTROL } from "../../constants";
+import { INPUT_JUMP, PLAYER_CONTROL } from "../../../constants";
 
 /**
  * Disable player jump for the current frame

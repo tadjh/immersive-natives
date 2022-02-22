@@ -1,4 +1,4 @@
-import { INPUT_SPRINT, PLAYER_CONTROL } from "../../constants";
+import { INPUT_SPRINT, PLAYER_CONTROL } from "../../../constants";
 
 /**
  * Disable player sprint for the current frame

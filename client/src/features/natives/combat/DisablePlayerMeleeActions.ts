@@ -8,7 +8,7 @@ import {
   INPUT_MELEE_ATTACK_LIGHT,
   INPUT_MELEE_BLOCK,
   PLAYER_CONTROL,
-} from "../../constants";
+} from "../../../constants";
 
 /**
  * Disable player melee actions for the current frame

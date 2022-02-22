@@ -1,4 +1,4 @@
-import { INPUT_DUCK, PLAYER_CONTROL } from "../../constants";
+import { INPUT_DUCK, PLAYER_CONTROL } from "../../../constants";
 
 /**
  * Disable player ducking for the current frame
