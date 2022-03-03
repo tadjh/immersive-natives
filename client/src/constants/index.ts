@@ -4,7 +4,7 @@ export const CURRENT_RESOURCE_NAME = GetCurrentResourceName();
 export const PLAYER_CONTROL = 0;
 export const PALETTE_ID = 2;
 export const NUMBER_OF_COMPONENTS = 12;
-export const NUMBER_OF_PROPS = 7;
+export const NUMBER_OF_PROPS = 8;
 export const NO_MASK: [number, number, number] = [1, 0, 0];
 
 // Controls
