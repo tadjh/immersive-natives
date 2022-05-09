@@ -1,8 +1,8 @@
-import { NO_MASK, PALETTE_ID } from "../../../constants";
+import { NO_MASK, PALETTE_ID } from "../../../config";
 
 /**
  * Remove ped mask
  */
-export const RemovePedMask = (ped: number) => {
+export function RemovePedMask(ped: number) {
   SetPedComponentVariation(ped, ...NO_MASK, PALETTE_ID);
-};
+}

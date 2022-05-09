@@ -1,8 +1,8 @@
-import { IS_ATTACHED, NO_HAT } from "../../../constants";
+import { IS_ATTACHED, NO_HAT } from "../../../config";
 
 /**
  * Remove ped hat
  */
-export const RemovePedHat = (ped: number) => {
+export function RemovePedHat(ped: number) {
   SetPedPropIndex(ped, ...NO_HAT, IS_ATTACHED);
-};
+}

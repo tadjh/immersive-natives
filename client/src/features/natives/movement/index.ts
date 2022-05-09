@@ -1,5 +1,5 @@
-export { DisablePlayerDuck } from "./DisablePlayerDuck";
-export { DisablePlayerJump } from "./DisablePlayerJump";
-export { DisablePlayerSprint } from "./DisablePlayerSprint";
-export { EnablePlayerMovement } from "./EnablePlayerMovement";
-export { RestrictPlayerMovement } from "./RestrictPlayerMovement";
+export * from "./DisablePlayerDuck";
+export * from "./DisablePlayerJump";
+export * from "./DisablePlayerSprint";
+export * from "./EnablePlayerMovement";
+export * from "./RestrictPlayerMovement";

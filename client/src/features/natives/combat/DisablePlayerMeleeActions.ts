@@ -8,12 +8,12 @@ import {
   INPUT_MELEE_ATTACK_LIGHT,
   INPUT_MELEE_BLOCK,
   PLAYER_CONTROL,
-} from "../../../constants";
+} from "../../../config";
 
 /**
  * Disable player melee actions for the current frame
  */
-export const DisablePlayerMeleeActions = () => {
+export function DisablePlayerMeleeActions() {
   DisableControlAction(PLAYER_CONTROL, INPUT_ATTACK, true);
   DisableControlAction(PLAYER_CONTROL, INPUT_MELEE_ATTACK_LIGHT, true);
   DisableControlAction(PLAYER_CONTROL, INPUT_MELEE_ATTACK_HEAVY, true);
@@ -22,4 +22,4 @@ export const DisablePlayerMeleeActions = () => {
   DisableControlAction(PLAYER_CONTROL, INPUT_ATTACK2, true);
   DisableControlAction(PLAYER_CONTROL, INPUT_MELEE_ATTACK1, true);
   DisableControlAction(PLAYER_CONTROL, INPUT_MELEE_ATTACK2, true);
-};
+}

@@ -1,8 +1,8 @@
-export { GetAllPedComponentVariations } from "./GetAllPedComponentVariations";
-export { GetAllPedPropIndexes } from "./GetAllPedPropIndexes";
-export { GetNumberOfAllPedDrawableVariations } from "./GetNumberOfAllPedDrawableVariations";
-export { GetNumberOfAllPedPropDrawableVariations } from "./GetNumberOfAllPedPropDrawableVariations";
-export { RemovePedHat } from "./RemovePedHat";
-export { RemovePedMask } from "./RemovePedMask";
-export { SetAllPedComponentVariations } from "./SetAllPedComponentVariations";
-export { SetAllPedPropIndexes } from "./SetAllPedPropIndexes";
+export * from "./GetAllPedComponentVariations";
+export * from "./GetAllPedPropIndexes";
+export * from "./GetNumberOfAllPedDrawableVariations";
+export * from "./GetNumberOfAllPedPropDrawableVariations";
+export * from "./RemovePedHat";
+export * from "./RemovePedMask";
+export * from "./SetAllPedComponentVariations";
+export * from "./SetAllPedPropIndexes";

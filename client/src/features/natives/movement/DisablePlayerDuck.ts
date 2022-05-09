@@ -1,7 +1,8 @@
-import { INPUT_DUCK, PLAYER_CONTROL } from "../../../constants";
+import { INPUT_DUCK, PLAYER_CONTROL } from "../../../config";
 
 /**
  * Disable player ducking for the current frame
  */
-export const DisablePlayerDuck = () =>
-  DisableControlAction(PLAYER_CONTROL, INPUT_DUCK, true);
+export function DisablePlayerDuck() {
+  return DisableControlAction(PLAYER_CONTROL, INPUT_DUCK, true);
+}

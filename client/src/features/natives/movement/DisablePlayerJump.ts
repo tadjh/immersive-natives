@@ -1,7 +1,8 @@
-import { INPUT_JUMP, PLAYER_CONTROL } from "../../../constants";
+import { INPUT_JUMP, PLAYER_CONTROL } from "../../../config";
 
 /**
  * Disable player jump for the current frame
  */
-export const DisablePlayerJump = () =>
-  DisableControlAction(PLAYER_CONTROL, INPUT_JUMP, true);
+export function DisablePlayerJump() {
+  return DisableControlAction(PLAYER_CONTROL, INPUT_JUMP, true);
+}

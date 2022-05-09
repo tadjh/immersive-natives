@@ -1,15 +1,11 @@
-import { CURRENT_RESOURCE_NAME } from "../constants";
+import { Args } from "../types";
+export * from "./debug";
 
-export const IS_DEBUG = () =>
-  !!GetConvarInt(`${CURRENT_RESOURCE_NAME}-debugMode`, 0);
+export function isEmpty<T extends unknown>(arr: T[]) {
+  return Array.isArray(arr) && !arr.length;
+}
 
-/**
- * A simple debug print function that is dependent on a convar
- * will output a nice prettfied message if debugMode is on
- * @param
- * @returns
- */
-export function debugDATA(...data: any[]) {
-  if (!IS_DEBUG()) return;
-  console.log(`${CURRENT_RESOURCE_NAME.toUpperCase()}:`, ...data);
+export function getArg(args: Args) {
+  const [arg1] = args;
+  return arg1;
 }

@@ -1,7 +1,8 @@
-import { INPUT_SPRINT, PLAYER_CONTROL } from "../../../constants";
+import { INPUT_SPRINT, PLAYER_CONTROL } from "../../../config";
 
 /**
  * Disable player sprint for the current frame
  */
-export const DisablePlayerSprint = () =>
-  DisableControlAction(PLAYER_CONTROL, INPUT_SPRINT, true);
+export function DisablePlayerSprint() {
+  return DisableControlAction(PLAYER_CONTROL, INPUT_SPRINT, true);
+}

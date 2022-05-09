@@ -1,1 +1,1 @@
-export { GetPedCoords } from "./GetPedCoords";
+export * from "./GetPedCoords";

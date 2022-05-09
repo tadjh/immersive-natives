@@ -1,4 +1,5 @@
-// Evironment
+import { Vector3Tuple } from "../types";
+
 export const CURRENT_RESOURCE_NAME = GetCurrentResourceName();
 
 export const PLAYER_CONTROL = 0;
@@ -6,9 +7,11 @@ export const PALETTE_ID = 2;
 export const IS_ATTACHED = true;
 export const NUMBER_OF_COMPONENTS = 12;
 export const NUMBER_OF_PROPS = 8;
-export const NO_MASK: [number, number, number] = [1, 0, 0];
-export const NO_HAT: [number, number, number] = [0, 0, 0];
-// Controls
+export const SHOULD_ATTACH_PROP = true; // TODO Should this always be false/true or not?
+
+export const NO_MASK: Vector3Tuple = [1, 0, 0];
+export const NO_HAT: Vector3Tuple = [0, 0, 0];
+
 export const INPUT_SPRINT = 21;
 export const INPUT_JUMP = 22;
 export const INPUT_ATTACK = 24;
