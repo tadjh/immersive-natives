@@ -5,9 +5,10 @@
  */
 export function SetAllPedPropIndexes(
   ped: number,
-  variations: ([number, number, number, boolean] | null)[]
+  variations: { [key: string]: [number, number, number, boolean] | null }
 ) {
-  for (let variation of variations) {
+  for (let key in variations) {
+    const variation = variations[key];
     if (!variation) continue;
     SetPedPropIndex(ped, ...variation);
   }

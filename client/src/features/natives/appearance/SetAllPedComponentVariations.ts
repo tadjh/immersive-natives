@@ -7,9 +7,10 @@ import { PALETTE_ID } from "../../../config";
  */
 export function SetAllPedComponentVariations(
   ped: number,
-  variations: ([number, number, number] | null)[]
+  variations: { [key: string]: [number, number, number] | null }
 ) {
-  for (let variation of variations) {
+  for (let key in variations) {
+    const variation = variations[key];
     if (!variation) continue;
     // TODO Should PALETTE_ID be dynamic? ie. GetPedPaletteVariation(ped, componentId || variation[0]);
     SetPedComponentVariation(ped, ...variation, PALETTE_ID);
