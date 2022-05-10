@@ -6,5 +6,5 @@ import { Vector3Tuple } from "../../../types";
  * @returns The coordinates for current ped
  */
 export function GetPedCoords(ped?: number): Vector3Tuple {
-  return GetEntityCoords(ped || PlayerPedId(), true) as Vector3Tuple;
+  return GetEntityCoords(ped ?? PlayerPedId(), true) as Vector3Tuple;
 }
