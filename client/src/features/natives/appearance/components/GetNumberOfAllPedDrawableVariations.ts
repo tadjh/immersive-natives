@@ -1,4 +1,4 @@
-import { NUMBER_OF_COMPONENTS } from "../../../config";
+import { NUMBER_OF_COMPONENTS } from "./config";
 
 /**
  * Gets all of the ped's drawable variations

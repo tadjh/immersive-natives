@@ -1,4 +1,4 @@
-import { NUMBER_OF_PROPS } from "../../../config";
+import { NUMBER_OF_PROPS } from "./config";
 
 /**
  * Gets all of the ped's prop drawable variations

@@ -2,10 +2,6 @@ export const CURRENT_RESOURCE_NAME = GetCurrentResourceName();
 
 export const PLAYER_CONTROL = 0;
 
-export const NUMBER_OF_COMPONENTS = 12;
-export const NUMBER_OF_PROPS = 8;
-export const SHOULD_ATTACH_PROP = true; // TODO Should this always be false/true or not?
-
 export const INPUT_SPRINT = 21;
 export const INPUT_JUMP = 22;
 export const INPUT_ATTACK = 24;

@@ -1,3 +1,6 @@
+import { SetPedPropIndexDefault } from "./SetPedPropIndexDefault";
+import { PropType, PropVariation } from "./types";
+
 /**
  * Set all ped prop indexes at once.
  * @param ped Player Ped Id
@@ -5,10 +8,13 @@
  */
 export function SetAllPedPropIndexes(
   ped: number,
-  variations: { [key: string]: [number, number, number, boolean] | null }
+  variations: { [key in PropType]: PropVariation | null },
+  setDefault?: boolean
 ) {
   for (let key in variations) {
-    const variation = variations[key];
+    const variation = variations[key as PropType];
+    if (setDefault && !variation)
+      return SetPedPropIndexDefault(ped, key as PropType);
     if (!variation) continue;
     SetPedPropIndex(ped, ...variation);
   }
