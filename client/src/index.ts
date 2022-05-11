@@ -9,8 +9,8 @@ import {
   GetNumberOfAllPedDrawableVariations,
   GetNumberOfAllPedPropDrawableVariations,
   GetPedCoords,
-  RemovePedMask,
   RemovePedPropIndex,
+  RemovePedComponentVariation,
   RestrictPlayerMovement,
   SetAllPedComponentVariations,
   SetAllPedPropIndexes,
@@ -32,8 +32,8 @@ globalThis.exports(
   "GetNumberOfAllPedPropDrawableVariations",
   GetNumberOfAllPedPropDrawableVariations
 );
-globalThis.exports("RemovePedMask", RemovePedMask);
 globalThis.exports("RemovePedPropIndex", RemovePedPropIndex);
+globalThis.exports("RemovePedComponentVariation", RemovePedComponentVariation);
 globalThis.exports(
   "SetAllPedComponentVariations",
   SetAllPedComponentVariations
