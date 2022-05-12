@@ -41,7 +41,7 @@ function handleDebug(arg: string) {
   toggleDebug(isDebug);
 }
 
-export function debug(_source: number, args: Args) {
+export function debug(_source: number, args: Args | []) {
   if (isEmpty(args)) return toggleDebug();
   const arg = getArg(args);
   handleDebug(arg);
