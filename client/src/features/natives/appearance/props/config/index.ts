@@ -1,6 +1,6 @@
-import { PropVariation } from "../types";
+import { propIds, PropVariation } from "../types";
 
-export const NUMBER_OF_PROPS = 8;
+export const NUMBER_OF_PROPS = propIds.length;
 export const SHOULD_ATTACH_PROP = true;
 
 export const NO_HAT: PropVariation = [0, -1, -1, true];

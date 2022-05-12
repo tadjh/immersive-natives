@@ -1,6 +1,6 @@
-import { ComponentVariation } from "../types";
+import { componentIds, ComponentVariation } from "../types";
 
-export const NUMBER_OF_COMPONENTS = 12;
+export const NUMBER_OF_COMPONENTS = componentIds.length;
 
 export const DEFAULT_FACE: ComponentVariation = [0, 0, 0, 2];
 export const NO_MASK: ComponentVariation = [1, 0, 0, 2];

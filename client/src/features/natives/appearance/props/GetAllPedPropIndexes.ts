@@ -1,4 +1,4 @@
-import { PropIdToName } from ".";
+import { PropIdToName } from "./PropIdToName";
 import { NUMBER_OF_PROPS, SHOULD_ATTACH_PROP } from "./config";
 import { PropId, PropType, PropVariation } from "./types";
 import { shouldSkipProp } from "./utils";
@@ -12,9 +12,9 @@ export function GetAllPedPropIndexes(ped: number): {
   [key in PropType]: PropVariation;
 } {
   let data = {} as { [key in PropType]: PropVariation };
-  for (let propId = 0; propId < NUMBER_OF_PROPS; propId++) {
-    if (shouldSkipProp(propId as PropId)) continue;
-    const key = PropIdToName(propId as PropId);
+  for (let propId = 0 as PropId; propId < NUMBER_OF_PROPS; propId++) {
+    if (shouldSkipProp(propId)) continue;
+    const key = PropIdToName(propId);
     data = {
       ...data,
       [key]: [

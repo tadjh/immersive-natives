@@ -1,5 +1,5 @@
 import { SetPedPropIndexDefault } from "./SetPedPropIndexDefault";
-import { PropType, PropVariation } from "./types";
+import { PropType, PropVariations } from "./types";
 
 /**
  * Set all ped prop indexes at once.
@@ -8,7 +8,7 @@ import { PropType, PropVariation } from "./types";
  */
 export function SetAllPedPropIndexes(
   ped: number,
-  variations: { [key in PropType]: PropVariation | null },
+  variations: PropVariations,
   setDefault?: boolean
 ) {
   for (let key in variations) {

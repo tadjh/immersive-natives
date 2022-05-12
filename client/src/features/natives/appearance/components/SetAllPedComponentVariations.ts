@@ -1,5 +1,5 @@
 import { SetPedComponentVariationDefault } from "./SetPedComponentVariationDefault";
-import { ComponentType, ComponentVariation } from "./types";
+import { ComponentType, ComponentVariations } from "./types";
 
 /**
  * Set all ped component variations at once.
@@ -9,7 +9,7 @@ import { ComponentType, ComponentVariation } from "./types";
  */
 export function SetAllPedComponentVariations(
   ped: number,
-  variations: { [key in ComponentType]: ComponentVariation | null },
+  variations: ComponentVariations,
   setDefault?: boolean
 ) {
   for (let key in variations) {
