@@ -4,13 +4,9 @@ import { isPropType } from "./utils";
 import { PropNameToId } from "./PropNameToId";
 
 export function SetPedPropIndexDefault(ped: number, prop: PropType | PropId) {
-  let propId = null;
-
   if (isPropType(prop)) {
-    propId = PropNameToId(prop);
-  } else {
-    propId = prop;
+    const propId = PropNameToId(prop);
+    return SetPedPropIndex(ped, ...GetDefaultPropVariation(propId));
   }
-
-  SetPedPropIndex(ped, ...GetDefaultPropVariation(propId));
+  SetPedPropIndex(ped, ...GetDefaultPropVariation(prop));
 }

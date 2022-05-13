@@ -7,13 +7,12 @@ export function SetPedComponentVariationDefault(
   ped: number,
   component: ComponentType | ComponentId
 ) {
-  let componentId = null;
-
   if (isComponentType(component)) {
-    componentId = ComponentNameToId(component);
-  } else {
-    componentId = component;
+    const componentId = ComponentNameToId(component);
+    return SetPedComponentVariation(
+      ped,
+      ...GetDefaultComponentVariation(componentId)
+    );
   }
-
-  SetPedComponentVariation(ped, ...GetDefaultComponentVariation(componentId));
+  SetPedComponentVariation(ped, ...GetDefaultComponentVariation(component));
 }
