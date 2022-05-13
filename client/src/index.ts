@@ -9,7 +9,6 @@ import {
   GetNumberOfAllPedDrawableVariations,
   GetNumberOfAllPedPropDrawableVariations,
   GetPedCoords,
-  RemovePedPropIndex,
   RemovePedComponentVariation,
   RestrictPlayerMovement,
   SetAllPedComponentVariations,
@@ -58,7 +57,6 @@ globalThis.exports(
 );
 globalThis.exports("PropIdToName", PropIdToName);
 globalThis.exports("PropNameToId", PropNameToId);
-globalThis.exports("RemovePedPropIndex", RemovePedPropIndex);
 globalThis.exports("SetAllPedPropIndexes", SetAllPedPropIndexes);
 globalThis.exports("SetPedPropIndexDefault", SetPedPropIndexDefault);
 
