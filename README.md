@@ -1,3 +1,3 @@
 # immersive-natives
 
-Custom FiveM Natives
+Custom FiveM Natives that aid in altering player appearance
